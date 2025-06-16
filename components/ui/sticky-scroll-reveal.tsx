@@ -42,8 +42,8 @@ export const StickyScroll = ({
 
   const backgroundColors = [
     "purple", //s slate-900
-    "pink", // black
-    "purple", // neutral-900
+    "orange", // black
+    "green", // neutral-900
   ];
   const linearGradients = [
     "linear-gradient(to bottom right, #06b6d4, #10b981)", // cyan-500 to emerald-500
@@ -100,9 +100,9 @@ export const StickyScroll = ({
         </div>
       </div>
       <div
-        style={{ background: backgroundGradient }}
+        // style={{ background: backgroundGradient }}
         className={cn(
-          "sticky top-36 hidden h-[30vw] w-[40vw] overflow-hidden rounded-md bg-white lg:block",
+          "sticky top-36 hidden  overflow-hidden rounded-md  lg:block",
           contentClassName,
         )}
       >
