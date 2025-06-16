@@ -14,9 +14,10 @@ import { FeaturesSectionDemo } from "@/components/Featuresection";
 import { LensDemo } from "@/components/Lensphoto";
 import { GoogleGeminiEffectDemo } from "@/components/GoogleGemini";
 import { LampDemo } from "@/components/Lamp";
-import { InfiniteMovingCardsDemo } from "@/components/Movingcard";
 
 import { HeroParallaxDemo } from "@/components/Blog";
+
+import { MarqueeDemo } from "@/components/Movingcard";
 const content = [
   {
     title: "Collaborative Editing",
@@ -161,8 +162,8 @@ export default function Home() {
         <h1>Testinomial</h1>
       </div>
       <AnimatedTestimonials autoplay={true} testimonials={testimonials} />
-      <h1 className="text-center text-3xl mt-10 mb-[]"> Frequently Asked Question</h1>
-      <InfiniteMovingCardsDemo />
+      {/* <h1 className="text-center text-3xl mt-10 mb-[]"> Frequently Asked Question</h1>
+      <MarqueeDemo /> */}
       <GoogleGeminiEffectDemo />
     </>
   );
