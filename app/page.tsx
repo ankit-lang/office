@@ -157,7 +157,7 @@ export default function Home() {
         <LampDemo />
       </div>
       <HeroParallaxDemo />
-      <div className="text-center text-3xl mt-[-50vw] md:mt-[-18vw]">
+      <div className="text-center text-3xl ">
         <h1>Testinomial</h1>
       </div>
       <AnimatedTestimonials autoplay={true} testimonials={testimonials} />
