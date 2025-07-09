@@ -35,11 +35,13 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
 }) => {
   const galleryImages = images.length > 0 ? images : IMGS;
 
-  const [isScreenSizeSm, setIsScreenSizeSm] = useState<boolean>(
-    window.innerWidth <= 640
-  );
+  // Initialize as false to avoid SSR window access
+  const [isScreenSizeSm, setIsScreenSizeSm] = useState<boolean>(false);
+
   useEffect(() => {
+    // Safe to access window here
     const handleResize = () => setIsScreenSizeSm(window.innerWidth <= 640);
+    handleResize(); // Set initial value on mount
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
