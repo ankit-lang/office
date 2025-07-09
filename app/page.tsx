@@ -137,7 +137,7 @@ export default function Home() {
             className="mt-32 !w-[100vw] left-10 md:left-0 md:mt-0"
             src="https://cdn.magicui.design/ocean-small.webm"
           >
-            Maitriya
+            Maitreya
           </VideoText>
           <VideoText
             className="mt-32 relative left-[-10] md:left-0  md:mt-0  "
