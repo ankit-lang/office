@@ -19,9 +19,9 @@ export const StickyScroll = ({
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
-    // target: ref
+    target: ref,
     container: ref,
-    offset: ["start start", "end start"],
+    offset: ["start start", "end end"],
   });
   const cardLength = content.length;
 
@@ -64,9 +64,10 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="!scrollbar-hidden relative flex h-[100vh] justify-center space-x-10 overflow-y-auto rounded-md p-10"
+      className="relative flex h-[100vh] justify-center space-x-10 overflow-y-auto rounded-md p-10 scrollbar-hidden"
       ref={ref}
     >
+
       <div className="div relative 
   flex items-start px-4">
         <div className="max-w-2xl  !scrollbar-hidden">

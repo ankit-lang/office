@@ -10,17 +10,18 @@ import {
       MobileNavToggle,
       MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
+import Link from "next/link";
 import { useState } from "react";
 
 export function NavbarDemo() {
       const navItems = [
             {
                   name: "Home",
-                  link: "#features",
+                  link: "/",
             },
             {
                   name: "About Us",
-                  link: "#pricing",
+                  link: "/about",
             },
             {
                   name: "Pricing ",
@@ -45,7 +46,16 @@ export function NavbarDemo() {
                         {/* Desktop Navigation */}
                         <NavBody className="!shadow-lg !bg-yellow-50" >
                               <NavbarLogo />
-                              <NavItems items={navItems} />
+                              {/* Updated NavItems rendering for client-side navigation */}
+                              <div className="flex gap-4">
+                                    {navItems.map((item, idx) => (
+                                          <Link key={`desktop-link-${idx}`} href={item.link} passHref legacyBehavior>
+                                                <a className="relative text-neutral-600 dark:text-neutral-300">
+                                                      {item.name}
+                                                </a>
+                                          </Link>
+                                    ))}
+                              </div>
                               <div className="flex items-center gap-4">
                                     <NavbarButton variant="secondary">Carrer</NavbarButton>
                                     <NavbarButton variant="primary">Contact</NavbarButton>
@@ -67,14 +77,19 @@ export function NavbarDemo() {
                                     onClose={() => setIsMobileMenuOpen(false)}
                               >
                                     {navItems.map((item, idx) => (
-                                          <a
+                                          <Link
                                                 key={`mobile-link-${idx}`}
                                                 href={item.link}
-                                                onClick={() => setIsMobileMenuOpen(false)}
-                                                className="relative text-neutral-600 dark:text-neutral-300"
+                                                passHref
+                                                legacyBehavior
                                           >
-                                                <span className="block">{item.name}</span>
-                                          </a>
+                                                <a
+                                                      onClick={() => setIsMobileMenuOpen(false)}
+                                                      className="relative text-neutral-600 dark:text-neutral-300"
+                                                >
+                                                      <span className="block">{item.name}</span>
+                                                </a>
+                                          </Link>
                                     ))}
                                     <div className="flex w-full flex-col gap-4">
                                           <NavbarButton
