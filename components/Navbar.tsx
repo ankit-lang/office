@@ -25,15 +25,15 @@ export function NavbarDemo() {
             },
             {
                   name: "Pricing ",
-                  link: "#contact",
+                  link: "/pricing",
             },
             {
                   name: "Services",
-                  link: "#contact",
+                  link: "/services",
             },
             {
                   name: "Blog",
-                  link: "#contact",
+                  link: "/blog",
             },
 
       ];
@@ -49,19 +49,24 @@ export function NavbarDemo() {
                               {/* Updated NavItems rendering for client-side navigation */}
                               <div className="flex gap-4">
                                     {navItems.map((item, idx) => (
-                                          <Link key={`desktop-link-${idx}`} href={item.link} passHref legacyBehavior>
-                                                <a className="relative text-neutral-600 dark:text-neutral-300">
-                                                      {item.name}
-                                                </a>
+                                          <Link
+                                                key={`desktop-link-${idx}`}
+                                                href={item.link}
+                                                className="relative text-neutral-600 dark:text-neutral-300"
+                                          >
+                                                {item.name}
                                           </Link>
                                     ))}
                               </div>
                               <div className="flex items-center gap-4">
-                                    <NavbarButton variant="secondary">Carrer</NavbarButton>
-                                    <NavbarButton variant="primary">Contact</NavbarButton>
+                                    <Link href="/career">
+                                          <NavbarButton variant="secondary">Career</NavbarButton>
+                                    </Link>
+                                    <Link href="/contact">
+                                          <NavbarButton variant="primary">Contact</NavbarButton>
+                                    </Link>
                               </div>
                         </NavBody>
-
                         {/* Mobile Navigation */}
                         <MobileNav>
                               <MobileNavHeader>
@@ -80,32 +85,31 @@ export function NavbarDemo() {
                                           <Link
                                                 key={`mobile-link-${idx}`}
                                                 href={item.link}
-                                                passHref
-                                                legacyBehavior
+                                                className="relative text-neutral-600 dark:text-neutral-300"
+                                                onClick={() => setIsMobileMenuOpen(false)}
                                           >
-                                                <a
-                                                      onClick={() => setIsMobileMenuOpen(false)}
-                                                      className="relative text-neutral-600 dark:text-neutral-300"
-                                                >
-                                                      <span className="block">{item.name}</span>
-                                                </a>
+                                                <span className="block">{item.name}</span>
                                           </Link>
                                     ))}
                                     <div className="flex w-full flex-col gap-4">
-                                          <NavbarButton
-                                                onClick={() => setIsMobileMenuOpen(false)}
-                                                variant="primary"
-                                                className="w-full"
-                                          >
-                                                Login
-                                          </NavbarButton>
-                                          <NavbarButton
-                                                onClick={() => setIsMobileMenuOpen(false)}
-                                                variant="primary"
-                                                className="w-full"
-                                          >
-                                                Book a call
-                                          </NavbarButton>
+                                          <Link href="/login">
+                                                <NavbarButton
+                                                      onClick={() => setIsMobileMenuOpen(false)}
+                                                      variant="primary"
+                                                      className="w-full"
+                                                >
+                                                      Login
+                                                </NavbarButton>
+                                          </Link>
+                                          <Link href="/book-call">
+                                                <NavbarButton
+                                                      onClick={() => setIsMobileMenuOpen(false)}
+                                                      variant="primary"
+                                                      className="w-full"
+                                                >
+                                                      Book a call
+                                                </NavbarButton>
+                                          </Link>
                                     </div>
                               </MobileNavMenu>
                         </MobileNav>
