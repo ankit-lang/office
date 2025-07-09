@@ -1,3 +1,4 @@
+"use client";
 import { CardSpotlightDemo } from '@/components/Cardspot'
 import { NavbarDemo } from '@/components/Navbar'
 import React from 'react'
