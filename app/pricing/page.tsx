@@ -59,10 +59,11 @@ const page = () => {
     <>
       <NavbarDemo />
       <div className=" pt-32 ">
-             <div className="flex items-center mb-10 relative z-[100] justify-center">
+             <div className="flex items-center mb-10 relative  justify-center">
+                
                       <SplitText
                   text="Pricing & Packages"
-                  className="text-5xl font-semibold text-center"
+                  className="text-5xl pb-10 font-semibold text-center"
                   delay={100}
                   duration={0.6}
                   ease="power3.out"
@@ -75,13 +76,13 @@ const page = () => {
                   
                 />
                       </div>
-      <div className='' style={{ height: '1200px', position: 'relative' }}>
+      <div className='pl-10 md:pl-20 md:pr20 !rounded-lg pr-10' style={{ height: '1200px', position: 'relative' }}>
     
   <ChromaGrid 
     items={items}
     radius={300}
     damping={0.45}
-    fadeOut={0.6}
+    fadeOut={0.2}
     ease="power3.out"
   />
 </div>

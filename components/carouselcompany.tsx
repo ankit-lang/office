@@ -10,16 +10,14 @@ import {
 } from "framer-motion";
 
 const IMGS: string[] = [
-  "https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1495103033382-fe343886b671?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1506781961370-37a89d6b3095?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1599576838688-8a6c11263108?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1494094892896-7f14a4433b7a?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1664910706524-e783eed89e71?q=80&w=3869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1503788311183-fa3bf9c4bc32?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://www.maitreyadigital.com/ruz_logo.jpg",
+  "https://www.maitreyadigital.com/gatbro_logo.jpg",
+  "https://www.maitreyadigital.com/perfume_logo.jpg",
+  "https://www.maitreyadigital.com/bath_logo.jpg",
+  "https://www.maitreyadigital.com/karmand_logo.png",
+  "https://www.maitreyadigital.com/admire_logo.jpg",
+  "https://www.maitreyadigital.com/prans_logo.jpg",
+  
 ];
 
 interface RollingGalleryProps {
@@ -154,9 +152,9 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
             width:
               typeof window !== "undefined"
                 ? window.innerWidth < 640
-                  ? 320
+                  ? 520
                   : window.innerWidth < 1024
-                  ? 700
+                  ? 1300
                   : 1100
                 : 1100,
             transformStyle: "preserve-3d",
@@ -171,11 +169,11 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
                 width: `${
                   typeof window !== "undefined"
                     ? window.innerWidth < 640
-                      ? 90
+                      ? 200
                       : window.innerWidth < 1024
-                      ? 140
-                      : 200
-                    : 200
+                      ? 240
+                      : 300
+                    : 300
                 }px`,
                 transform: `rotateY(${(360 / faceCount) * i}deg) translateZ(${radius}px)`,
               }}
@@ -183,7 +181,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               <img
                 src={url}
                 alt="gallery"
-                className="pointer-events-none h-[40px] w-[80px] sm:h-[60px] sm:w-[120px] md:h-[100px] md:w-[220px] lg:h-[120px] lg:w-[300px] rounded-[10px] border-[2px] border-white object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+                className="pointer-events-none h-[60px] w-[80px] sm:h-[60px] sm:w-[120px] md:h-[100px] md:w-[220px] lg:h-[160px] lg:w-[300px] rounded-[10px] border-[2px] border-white object-cover transition-transform duration-300 ease-out group-hover:scale-105"
               />
             </div>
           ))}

@@ -2,6 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import SplitText from "./Staggertext";
+import Link from "next/link";
 
 export interface ChromaItem {
   image: string;
@@ -41,7 +42,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
 
   const demo: ChromaItem[] = [
     {
-      image: "https://i.pravatar.cc/300?img=8",
+      image: "https://www.maitreyadigital.com/service-1.webp",
       title: "Alex Rivera",
       subtitle: "Full Stack Developer",
       handle: "@alexrivera",
@@ -50,7 +51,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       url: "https://github.com/",
     },
     {
-      image: "https://i.pravatar.cc/300?img=11",
+      image: "https://www.maitreyadigital.com/services-2.png",
       title: "Jordan Chen",
       subtitle: "DevOps Engineer",
       handle: "@jordanchen",
@@ -59,7 +60,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       url: "https://linkedin.com/in/",
     },
     {
-      image: "https://i.pravatar.cc/300?img=3",
+      image: "https://www.maitreyadigital.com/services-3.jpg",
       title: "Morgan Blake",
       subtitle: "UI/UX Designer",
       handle: "@morganblake",
@@ -68,7 +69,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       url: "https://dribbble.com/",
     },
     {
-      image: "https://i.pravatar.cc/300?img=16",
+      image: "https://www.maitreyadigital.com/services-4.png",
       title: "Casey Park",
       subtitle: "Data Scientist",
       handle: "@caseypark",
@@ -77,7 +78,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       url: "https://kaggle.com/",
     },
     {
-      image: "https://i.pravatar.cc/300?img=25",
+      image: "https://www.maitreyadigital.com/services-5.jpg",
       title: "Sam Kim",
       subtitle: "Mobile Developer",
       handle: "@thesamkim",
@@ -86,7 +87,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       url: "https://github.com/",
     },
     {
-      image: "https://i.pravatar.cc/300?img=60",
+      image: "https://www.maitreyadigital.com/services-6.jpg",
       title: "Tyler Rodriguez",
       subtitle: "Cloud Architect",
       handle: "@tylerrod",
@@ -155,7 +156,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       ref={rootRef}
       onPointerMove={handleMove}
       onPointerLeave={handleLeave}
-      className={`relative w-full h-[120vh] pt-10 flex flex-wrap justify-center  gap-3 ${className}`}
+      className={`relative w-full pb-20 rounded-lg pt-10 flex flex-wrap justify-center items-center  gap-7 ${className}`}
       style={
         {
           "--r": `${radius}px`,
@@ -166,11 +167,12 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
     >
       
       {data.map((c, i) => (
+        // <Link href={`/services/${c.url}`} >
         <article
           key={i}
           onMouseMove={handleCardMove}
-          onClick={() => handleCardClick(c.url)}
-          className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300 cursor-pointer"
+        
+          className="group relative items-start flex flex-col w-[300px] rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300 cursor-pointer"
           style={
             {
               "--card-border": c.borderColor || "transparent",
@@ -194,13 +196,13 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
               className="w-full h-full object-cover rounded-[10px]"
             />
           </div>
-          <footer className="relative z-10 p-3 text-white font-sans grid grid-cols-[1fr_auto] gap-x-3 gap-y-1">
+          <footer className="relative z-10 p-3 text-white font-sans  gap-x-3 gap-y-1">
             <h3 className="m-0 text-[1.05rem] font-semibold">{c.title}</h3>
-            {c.handle && (
-              <span className="text-[0.95rem] opacity-80 text-right">
-                {c.handle}
-              </span>
-            )}
+            {/* {c.handle && ( */}
+              {/* // <span className="text-[0.95rem] opacity-80 text-right"> */}
+              {/* //   {c.handle} */}
+              {/* // </span> */}
+            {/* )} */}
             <p className="m-0 text-[0.85rem] opacity-85">{c.subtitle}</p>
             {c.location && (
               <span className="text-[0.85rem] opacity-85 text-right">
@@ -209,6 +211,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
             )}
           </footer>
         </article>
+        // </Link>
       ))}
       <div
         className="absolute inset-0 pointer-events-none z-30"

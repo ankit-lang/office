@@ -52,17 +52,18 @@ export function NavbarDemo() {
                                           <Link
                                                 key={`desktop-link-${idx}`}
                                                 href={item.link}
-                                                className="relative text-neutral-600 dark:text-neutral-300"
+                                                className="relative text-neutral-600 dark:text-neutral-300 cursor-pointer"
+                                                // passHref is not needed for Next.js 13+ and can cause issues if used with <Link> directly
                                           >
                                                 {item.name}
                                           </Link>
                                     ))}
                               </div>
                               <div className="flex items-center gap-4">
-                                    <Link href="/career">
+                                    <Link  href="/career" className="cursor-pointer">
                                           <NavbarButton variant="secondary">Career</NavbarButton>
                                     </Link>
-                                    <Link href="/contact">
+                                    <Link  href="/contact" className="cursor-pointer">
                                           <NavbarButton variant="primary">Contact</NavbarButton>
                                     </Link>
                               </div>
@@ -85,14 +86,15 @@ export function NavbarDemo() {
                                           <Link
                                                 key={`mobile-link-${idx}`}
                                                 href={item.link}
-                                                className="relative text-neutral-600 dark:text-neutral-300"
+                                                className="relative text-neutral-600 dark:text-neutral-300 cursor-pointer"
                                                 onClick={() => setIsMobileMenuOpen(false)}
+                                                // passHref is not needed here either
                                           >
                                                 <span className="block">{item.name}</span>
                                           </Link>
                                     ))}
                                     <div className="flex w-full flex-col gap-4">
-                                          <Link href="/login">
+                                          <Link href="/login" className="cursor-pointer">
                                                 <NavbarButton
                                                       onClick={() => setIsMobileMenuOpen(false)}
                                                       variant="primary"
@@ -101,7 +103,7 @@ export function NavbarDemo() {
                                                       Login
                                                 </NavbarButton>
                                           </Link>
-                                          <Link href="/book-call">
+                                          <Link href="/book-call" className="cursor-pointer">
                                                 <NavbarButton
                                                       onClick={() => setIsMobileMenuOpen(false)}
                                                       variant="primary"

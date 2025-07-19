@@ -5,8 +5,17 @@ import SplitText from '@/components/Staggertext';
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini';
 
 const items = [
+   {
+    image: "https://www.maitreyadigital.com/service-1.webp",
+    title: "Website development",
+    subtitle: "Web Design, Web Development, Deployement, Maintainance",
+    handle: "@maitreya",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "/website-development"
+  },
   {
-    image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
+    image: "https://www.maitreyadigital.com/services-2.png",
     title: "Website development",
     subtitle: "Web Design, Web Development, Deployement, Maintainance",
     handle: "@maitreya",
@@ -15,7 +24,7 @@ const items = [
     url: "https://github.com/sarahjohnson"
   },
   {
-    image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
+    image: "https://www.maitreyadigital.com/services-3.jpg",
     title: "SEO",
     subtitle: "Backend Engineer Improving website visibility through optimized content and technical strategies.",
     handle: "@maitreya",
@@ -24,7 +33,7 @@ const items = [
     url: "https://linkedin.com/in/mikechen"
   }
 ,  {
-      image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
+      image: "https://www.maitreyadigital.com/services-4.png",
       title: "SMM",
       subtitle: "Engaging target audience and building brand awareness through social media platforms.",
       handle: "@maitreya",
@@ -33,7 +42,7 @@ const items = [
       url: "https://linkedin.com/in/mikechen"
     },
       {
-      image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
+      image: "https://www.maitreyadigital.com/services-5.jpg",
       title: "Graphic Design",
       subtitle: "Creating Graphics and Videos for Social Media Posting",
       handle: "@maitreya",
@@ -42,7 +51,7 @@ const items = [
       url: "https://linkedin.com/in/mikechen"
     },
     ,  {
-      image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
+      image: "https://www.maitreyadigital.com/services-6.jpg",
       title: "Lead Generation",
       subtitle: "Reaching target audience through targeted digital advertising campaigns.",
       handle: "@maitreya",
@@ -72,13 +81,13 @@ const page = () => {
               
             />
                   </div>
-            <div className='' style={{ height: '1200px', position: 'relative' }}>
+            <div className='pl-20 pr-20 rounded-full' style={{ height: '1200px', position: 'relative' }}>
           
         <ChromaGrid 
           items={items}
           radius={300}
           damping={0.45}
-          fadeOut={0.6}
+          fadeOut={0.2}
           ease="power3.out"
         />
       </div>
