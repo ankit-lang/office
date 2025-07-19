@@ -118,7 +118,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
   };
 
   return (
-    <div className="relative w-full overflow-hidden h-[180px] sm:h-[250px] md:h-[350px] lg:h-[500px]">
+    <div className="relative w-full overflow-hidden h-[380px] md:h-[350px] lg:h-[500px]">
       {/* Left shadow - purple, reduced width on mobile */}
       {/* <div
         className="absolute top-0 left-0 h-full w-[10px] sm:w-[16px] md:w-[24px] lg:w-[32px] z-10 pointer-events-none"
@@ -135,7 +135,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
             "linear-gradient(to right, rgba(0,0,0,0) 0%, #a855f7 100%)",
         }}
       /> */}
-      <div className="flex h-full items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
+      <div className="flex h-[40vh] items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
         <motion.div
           drag="x"
           dragElastic={0}
@@ -152,24 +152,24 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
             width:
               typeof window !== "undefined"
                 ? window.innerWidth < 640
-                  ? 520
+                  ? 600
                   : window.innerWidth < 1024
                   ? 1300
                   : 1100
                 : 1100,
             transformStyle: "preserve-3d",
           }}
-          className="flex min-h-[80px] sm:min-h-[120px] md:min-h-[200px] cursor-grab items-center justify-center [transform-style:preserve-3d]"
+          className="flex min-h-[120px]  md:min-h-[200px] cursor-grab items-center justify-center [transform-style:preserve-3d]"
         >
           {galleryImages.map((url, i) => (
             <div
               key={i}
-              className="group absolute flex h-fit items-center justify-center p-[2%]  md:p-[6%] [backface-visibility:hidden]"
+              className="group absolute flex h-fit items-center justify-center   md:p-[6%] [backface-visibility:hidden]"
               style={{
                 width: `${
                   typeof window !== "undefined"
                     ? window.innerWidth < 640
-                      ? 400
+                      ? 300
                       : window.innerWidth < 1024
                       ? 240
                       : 300
@@ -181,7 +181,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               <img
                 src={url}
                 alt="gallery"
-                className="pointer-events-none !h-[200px] w-[80px]  md:h-[100px] md:w-[220px] lg:h-[160px] lg:w-[300px] rounded-[10px] border-[2px] border-white object-cover transition-transform duration-100 ease-out group-hover:scale-105"
+                className="pointer-events-none !h-[200px] w-[180px]  md:h-[100px] md:w-[220px] lg:h-[160px] lg:w-[300px] rounded-[10px] border-[2px] border-white object-cover transition-transform duration-100 ease-out group-hover:scale-105"
               />
             </div>
           ))}
