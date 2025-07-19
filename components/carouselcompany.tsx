@@ -164,12 +164,12 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
           {galleryImages.map((url, i) => (
             <div
               key={i}
-              className="group absolute flex h-fit items-center justify-center p-[2%] sm:p-[4%] md:p-[6%] [backface-visibility:hidden]"
+              className="group absolute flex h-fit items-center justify-center p-[2%]  md:p-[6%] [backface-visibility:hidden]"
               style={{
                 width: `${
                   typeof window !== "undefined"
                     ? window.innerWidth < 640
-                      ? 200
+                      ? 400
                       : window.innerWidth < 1024
                       ? 240
                       : 300
@@ -181,7 +181,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               <img
                 src={url}
                 alt="gallery"
-                className="pointer-events-none h-[60px] w-[80px] sm:h-[60px] sm:w-[120px] md:h-[100px] md:w-[220px] lg:h-[160px] lg:w-[300px] rounded-[10px] border-[2px] border-white object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+                className="pointer-events-none !h-[200px] w-[80px]  md:h-[100px] md:w-[220px] lg:h-[160px] lg:w-[300px] rounded-[10px] border-[2px] border-white object-cover transition-transform duration-100 ease-out group-hover:scale-105"
               />
             </div>
           ))}
