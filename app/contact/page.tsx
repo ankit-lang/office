@@ -85,13 +85,13 @@ export function ContactSection() {
         </div>
 
         {/* Back to top button */}
-        <button
+        {/* <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="absolute bottom-6 right-6 bg-teal-500 text-white p-3 rounded-full shadow-lg hover:bg-teal-600 transition"
           aria-label="Back to top"
         >
           <HiArrowSmUp size={24} />
-        </button>
+        </button> */}
       </div>
 
       {/* Right Contact Form */}

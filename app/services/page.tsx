@@ -81,7 +81,7 @@ const page = () => {
               
             />
                   </div>
-            <div className='pl-20 pr-20 rounded-full' style={{ height: '1200px', position: 'relative' }}>
+            <div className='md:pl-20 md:pr-20 pl-2 pr-2 rounded-full' style={{ height: '1200px', position: 'relative' }}>
           
         <ChromaGrid 
           items={items}
@@ -92,7 +92,7 @@ const page = () => {
         />
       </div>
             </div>
-            <GoogleGeminiEffectDemo/>
+            {/* <GoogleGeminiEffectDemo/> */}
     </div>
   )
 }

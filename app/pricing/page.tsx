@@ -63,7 +63,7 @@ const page = () => {
                 
                       <SplitText
                   text="Pricing & Packages"
-                  className="text-5xl pb-10 font-semibold text-center"
+                  className="md:text-5xl text-3xl pb-10 font-semibold text-center"
                   delay={100}
                   duration={0.6}
                   ease="power3.out"
@@ -76,7 +76,7 @@ const page = () => {
                   
                 />
                       </div>
-      <div className='pl-10 md:pl-20 md:pr20 !rounded-lg pr-10' style={{ height: '1200px', position: 'relative' }}>
+      <div className='pl-2 md:pl-20 md:pr20 !rounded-lg pr-2' style={{ height: '1200px', position: 'relative' }}>
     
   <ChromaGrid 
     items={items}
@@ -87,7 +87,7 @@ const page = () => {
   />
 </div>
       </div>
-      <GoogleGeminiEffectDemo/>
+      {/* <GoogleGeminiEffectDemo/> */}
     </>
   )
 }
