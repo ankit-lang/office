@@ -94,22 +94,22 @@ export function NavbarDemo() {
                                           </Link>
                                     ))}
                                     <div className="flex w-full flex-col gap-4">
-                                          <Link href="/login" className="cursor-pointer">
+                                          <Link href="/career" className="cursor-pointer">
                                                 <NavbarButton
                                                       onClick={() => setIsMobileMenuOpen(false)}
                                                       variant="primary"
                                                       className="w-full"
                                                 >
-                                                      Login
+                                                      career
                                                 </NavbarButton>
                                           </Link>
-                                          <Link href="/book-call" className="cursor-pointer">
+                                          <Link href="/contact" className="cursor-pointer">
                                                 <NavbarButton
                                                       onClick={() => setIsMobileMenuOpen(false)}
                                                       variant="primary"
                                                       className="w-full"
                                                 >
-                                                      Book a call
+                                                      contact us
                                                 </NavbarButton>
                                           </Link>
                                     </div>
