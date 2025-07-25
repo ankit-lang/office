@@ -171,8 +171,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
         <article
           key={i}
           onMouseMove={handleCardMove}
-        
-          className="group relative items-start flex flex-col w-[300px] rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300 cursor-pointer"
+          className="group relative items-start flex flex-col w-[300px] h-[400px] rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300 cursor-pointer"
           style={
             {
               "--card-border": c.borderColor || "transparent",
@@ -188,7 +187,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 "radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)",
             }}
           />
-          <div className="relative z-10 flex-1 p-[10px] box-border">
+          <div className="relative z-10 h-[300px] p-[10px] box-border">
             <img
               src={c.image}
               alt={c.title}
@@ -246,3 +245,4 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
 };
 
 export default ChromaGrid;
+// export default ChromaGrid;

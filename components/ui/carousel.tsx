@@ -112,6 +112,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         >
           <h2 className="text-lg  md:text-2xl lg:text-4xl font-semibold  relative">
             {/* {title} */}
+            
           </h2>
           <div className="flex justify-center">
             {/* <button className="mt-6  px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"> */}
@@ -153,6 +154,10 @@ interface CarouselProps {
 
 export default function Carousel({ slides }: CarouselProps) {
   const [current, setCurrent] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const sliderRef = useRef<HTMLUListElement>(null);
 
   const handlePreviousClick = () => {
     const previous = current - 1;
@@ -172,16 +177,73 @@ export default function Carousel({ slides }: CarouselProps) {
 
   const id = useId();
 
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!sliderRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - sliderRef.current.offsetLeft);
+    setScrollLeft(sliderRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !sliderRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - sliderRef.current.offsetLeft;
+    const walk = (x - startX) * 3; // Increased multiplier
+    const slideWidth = sliderRef.current.clientWidth;
+    if (Math.abs(walk) > slideWidth / 6) { // Reduced threshold
+      if (walk > 0) {
+        handlePreviousClick();
+      } else {
+        handleNextClick();
+      }
+      setIsDragging(false);
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (!sliderRef.current) return;
+    setIsDragging(true);
+    setStartX(e.touches[0].pageX - sliderRef.current.offsetLeft);
+    setScrollLeft(sliderRef.current.scrollLeft);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging || !sliderRef.current) return;
+    const x = e.touches[0].pageX - sliderRef.current.offsetLeft;
+    const walk = (x - startX) * 3; // Increased multiplier
+    const slideWidth = sliderRef.current.clientWidth;
+    if (Math.abs(walk) > slideWidth / 6) { // Reduced threshold
+      if (walk > 0) {
+        handlePreviousClick();
+      } else {
+        handleNextClick();
+      }
+      setIsDragging(false);
+    }
+  };
+
   return (
     <div
       className="relative w-[70vmin] h-[70vmin] mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
-        className="absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out"
+        ref={sliderRef}
+        className="absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out cursor-grab active:cursor-grabbing"
         style={{
           transform: `translateX(-${current * (100 / slides.length)}%)`,
         }}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleMouseUp}
       >
         {slides.map((slide, index) => (
           <Slide

@@ -5,15 +5,7 @@ import SplitText from '@/components/Staggertext';
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini';
 
 const items = [
-   {
-    image: "https://www.maitreyadigital.com/service-1.webp",
-    title: "Website development",
-    subtitle: "Web Design, Web Development, Deployement, Maintainance",
-    handle: "@maitreya",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "/website-development"
-  },
+ 
   {
     image: "https://www.maitreyadigital.com/services-2.png",
     title: "Website development",

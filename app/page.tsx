@@ -181,7 +181,7 @@ export default function Home() {
       <div className="relative overflow-hidden w-full h-full py-20">
         <Carousel slides={slideData} />
       </div>
-      <div className="hidden  md:mb-10 h-[100vh] md:flex">
+      <div className="hidden mt-10 md:mb-10 h-[100vh] md:flex">
         <LampDemo />
       </div>
       <HeroParallaxDemo />
@@ -245,7 +245,9 @@ export default function Home() {
   </div>
       {/* <h1 className="text-center text-3xl mt-10 mb-[]"> Frequently Asked Question</h1>
       <MarqueeDemo /> */}
-      <GoogleGeminiEffectDemo />
+ <div className="">
+       <GoogleGeminiEffectDemo />
+ </div>
     </>
   );
 }
