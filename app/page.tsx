@@ -37,7 +37,7 @@ const content = [
     description:
       "Discover digital success with Maitreya Digital, India's premier digital marketing agency. Based in Delhi NCR, we excel in driving business growth through innovative strategies and expertise. For a top digital marketing company or a reliable marketing agency near you, choose Maitreya Digital.",
     content: (
-      <LensDemo />
+      <LensDemo img="/banner/1.png"  title="Expertise" subtitle='With an experience and a proven track record of success, we have the expertise to deliver results that matter.' />
     ),
   },
   {
@@ -45,7 +45,7 @@ const content = [
     description:
       "At Maitreya Digital, our mission is simple: to empower brands with the tools and strategies they need to succeed in the digital age. We believe in the power of technology to drive meaningful connections and create lasting impressions. With our unique blend of creativity, expertise, and dedication, we strive to deliver unparalleled results that exceed our clients' expectations.",
     content: (
-      <LensDemo />
+      <LensDemo img="/banner/2.png" title="Innovation" subtitle="We stay ahead of the curve with cutting-edge strategies and technologies to ensure your brand remains competitive." />
     ),
   },
   {
@@ -54,7 +54,7 @@ const content = [
       "What sets us apart at Maitreya Digital is our client-centric approach. We understand that every business is unique, which is why we take the time to listen to your needs, understand your goals, and tailor our strategies accordingly. Whether you're looking to increase brand visibility, drive website traffic, or boost conversion rates, we have the knowledge and experience to help you achieve your objectives.",
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
-        <LensDemo />
+        <LensDemo img="/banner/3.png"  title="Commitment" subtitle="We are committed to our clients' success and go above and beyond to deliver exceptional service and results." />
       </div>
     ),
   },
@@ -143,7 +143,7 @@ export default function Home() {
 
         <ScrollProgress className="!h-2  " />
 
-        <div className="relative    md:w-[80vw]  h-[28vw] m-auto overflow-visible flex gap-[-10px] items-center justify-center">
+        <div className="relative    md:w-[80vw]  h-[32vw] m-auto overflow-visible flex gap-[-10px] items-center justify-center">
           <VideoText
             className="mt-32 !w-[100vw] left-10 md:left-0 md:mt-0"
             src="https://cdn.magicui.design/ocean-small.webm"

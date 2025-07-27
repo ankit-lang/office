@@ -5,7 +5,7 @@ import { Lens } from "./ui/lens";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-export function LensDemo() {
+export function LensDemo({img,title,subtitle}: {img: string, title?: string, subtitle?: string}) {
       const [hovering, setHovering] = useState(false);
 
       return (
@@ -16,7 +16,7 @@ export function LensDemo() {
                         <div className="relative z-10">
                               <Lens hovering={hovering} setHovering={setHovering}>
                                     <img
-                                          src="https://images.unsplash.com/photo-1713869820987-519844949a8a?q=80&w=3500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                          src={img}
                                           alt="image"
                                           width={500}
                                           height={500}
@@ -30,10 +30,10 @@ export function LensDemo() {
                                     className="py-4 relative z-20"
                               >
                                     <h2 className="text-white text-2xl text-center font-bold">
-                                          Maitreya Digital
+                                    {title}
                                     </h2>
                                     <p className="text-neutral-200 text-left  mt-4">
-                                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nisi!
+                                        {subtitle}
                                     </p>
                               </motion.div>
                         </div>
