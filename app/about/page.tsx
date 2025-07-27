@@ -58,6 +58,61 @@ Our commitment to excellence extends beyond just delivering exceptional results;
  {/* <TextGenerateEffect words={"Why Choose Maitreya Digital"} /> */}
  
 </div>
+ <section className="bg-white px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-6xl mx-auto space-y-16">
+
+        {/* Our Mission */}
+        <motion.div
+          className="flex flex-col-reverse lg:flex-row items-center lg:space-x-8 space-y-6 lg:space-y-0"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="lg:w-1/2">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Through innovative solutions and tailored approaches, we empower businesses to navigate the complexities of the digital landscape with confidence. Our team is driven by a passion for excellence and a relentless pursuit of success, ensuring that every client receives personalized attention and strategic guidance tailored to their unique goals and challenges. At Maitreya Digital, we don't just provide services; we forge partnerships built on trust, integrity, and mutual growth. Join us as we embark on a journey to unlock the full potential of your brand in the digital realm.
+            </p>
+          </div>
+          <motion.img
+            src={missionIllustration}
+            alt="Our Mission Illustration"
+            className="w-full lg:w-1/2 object-contain"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          />
+        </motion.div>
+
+        {/* Our Approach */}
+        <motion.div
+          className="flex flex-col lg:flex-row items-center lg:space-x-8 space-y-6 lg:space-y-0"
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.img
+            src={approachIllustration}
+            alt="Our Approach Illustration"
+            className="w-full lg:w-1/2 object-contain"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          />
+          <div className="lg:w-1/2">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Approach</h3>
+            <p className="text-gray-600 leading-relaxed">
+              At Maitreya Digital, what distinguishes us is our unwavering focus on our clients. We recognize that each business is distinct, which is why we prioritize understanding your specific requirements and objectives. By taking the time to listen and comprehend your goals, we can customize our strategies accordingly. Whether your aim is to enhance brand visibility, drive traffic to your website, or increase conversion rates, our team possesses the expertise and experience to assist you in achieving your goals.
+            </p>
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
     <GoogleGeminiEffectDemo/>
 
    </>

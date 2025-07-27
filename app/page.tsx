@@ -143,7 +143,7 @@ export default function Home() {
 
         <ScrollProgress className="!h-2  " />
 
-        <div className="relative    md:w-[80vw]  h-[28vw] m-auto overflow-visible flex gap-0 items-center justify-center">
+        <div className="relative    md:w-[80vw]  h-[28vw] m-auto overflow-visible flex gap-[-10px] items-center justify-center">
           <VideoText
             className="mt-32 !w-[100vw] left-10 md:left-0 md:mt-0"
             src="https://cdn.magicui.design/ocean-small.webm"
@@ -151,7 +151,7 @@ export default function Home() {
             Maitreya
           </VideoText>
           <VideoText
-            className="mt-32 relative left-[-10] md:left-0  md:mt-0  "
+            className="mt-32 relative  left-[-10px] md:left-0  md:mt-0  "
             src="https://cdn.magicui.design/ocean-small.webm"
           >
             Digital

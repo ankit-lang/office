@@ -8,8 +8,8 @@ import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini';
 
 const items = [
   {
-    image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
-    title: "Sarah Johnson",
+    image: "/price/1.png",
+    title: "Website Development",
     subtitle: "Web Design, Web Development, Deployement, Maintainance",
     handle: "@sarahjohnson",
     borderColor: "#3B82F6",
@@ -17,17 +17,17 @@ const items = [
     url: "https://github.com/sarahjohnson"
   },
   {
-    image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
-    title: "SEO",
-    subtitle: "Backend Engineer Improving website visibility through optimized content and technical strategies.",
+    image: "/price/2.png",
+    title: "Search Engine Optimization",
+    subtitle: "Improving website visibility through optimized content and technical strategies..",
     handle: "@mikechen",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
     url: "https://linkedin.com/in/mikechen"
   }
 ,  {
-      image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
-      title: "SMM",
+      image: "/price/3.png",
+      title: "Social Media Marketing",
       subtitle: "Engaging target audience and building brand awareness through social media platforms.",
       handle: "@mikechen",
       borderColor: "#10B981",
@@ -35,18 +35,18 @@ const items = [
       url: "https://linkedin.com/in/mikechen"
     },
       {
-      image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
-      title: "Graphic Design",
-      subtitle: "Creating Graphics and Videos for Social Media Posting",
+      image: "/price/4.png",
+      title: "Graphic Designing and Reels/Video Creation",
+      subtitle: "Reaching target audience through targeted digital advertising campaigns.",
       handle: "@mikechen",
       borderColor: "#10B981",
       gradient: "linear-gradient(180deg, #10B981, #000)",
       url: "https://linkedin.com/in/mikechen"
     },
     ,  {
-      image: "https://imgs.search.brave.com/Fq9cEQO-DteMPDNBlgvKTtcElKS2uc1ediaFygsV-Po/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTgw/NDI4MTM0L3Bob3Rv/L2RpZ2l0YWwtbWFy/a2V0aW5nLXdpdGgt/cGVyc29uLXVzaW5n/LWEtbGFwdG9wLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz15/TlRJdUhFTXhYMWQ2/N1JmeE5nZENXREUw/TGpZajBDS0kydDVW/aXh0ajA0PQ",
-      title: "Onl",
-      subtitle: "Reaching target audience through targeted digital advertising campaigns.",
+      image: "/price/5.png",
+      title: "Online Ads/Lead Generation",
+      subtitle: "Creating Graphics and Videos for Social Media Posting",
       handle: "@mikechen",
       borderColor: "#10B981",
       gradient: "linear-gradient(180deg, #10B981, #000)",
@@ -76,7 +76,7 @@ const page = () => {
                   
                 />
                       </div>
-      <div className='pl-2 md:pl-20 md:pr20 !rounded-lg pr-2' style={{ height: '1200px', position: 'relative' }}>
+      <div className='pl-2 md:pl-20 md:pr-20  pr-2' style={{ height: '1200px', position: 'relative' }}>
     
   <ChromaGrid 
     items={items}

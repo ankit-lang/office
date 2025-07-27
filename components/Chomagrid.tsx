@@ -167,7 +167,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
     >
       
       {data.map((c, i) => (
-        // <Link href={`/services/${c.url}`} >
+        <Link href={c.url} >
         <article
           key={i}
           onMouseMove={handleCardMove}
@@ -192,7 +192,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
               src={c.image}
               alt={c.title}
               loading="lazy"
-              className="w-full h-full object-cover rounded-[10px]"
+              className="w-full h-full object-cover  rounded-[10px]"
             />
           </div>
           <footer className="relative z-10 p-3 text-white font-sans  gap-x-3 gap-y-1">
@@ -210,7 +210,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
             )}
           </footer>
         </article>
-        // </Link>
+        </Link>
       ))}
       <div
         className="absolute inset-0 pointer-events-none z-30"
