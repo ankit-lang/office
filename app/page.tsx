@@ -141,7 +141,7 @@ export default function Home() {
         whileInView={{ opacity: 1 }}
       >
 
-        <ScrollProgress className="!h-2  " />
+        <ScrollProgress className="!h-2 z-[100] " />
 
         <div className="relative    md:w-[80vw]  h-[32vw] m-auto overflow-visible flex gap-[-10px] items-center justify-center">
           <VideoText

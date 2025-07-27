@@ -2,7 +2,7 @@
 import { CardSpotlightDemo } from '@/components/Cardspot'
 import { NavbarDemo } from '@/components/Navbar'
 import React from 'react'
-
+import { motion } from 'framer-motion';
 import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
 import CurvedLoop from '@/components/Curvedloop';
 import Carousel from '@/components/aceCaroursel';
@@ -45,7 +45,7 @@ Our commitment to excellence extends beyond just delivering exceptional results;
 />
 </div>
 
-<div style={{ height: '800px', position: 'relative' }}>
+<div style={{ height: '500px', position: 'relative' }}>
   <Carousel
     baseWidth={360}
     autoplay={true}
@@ -58,7 +58,7 @@ Our commitment to excellence extends beyond just delivering exceptional results;
  {/* <TextGenerateEffect words={"Why Choose Maitreya Digital"} /> */}
  
 </div>
- <section className="bg-white px-4 sm:px-6 lg:px-8 py-16">
+ <section className="bg-white px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-6xl mx-auto space-y-16">
 
         {/* Our Mission */}
@@ -76,7 +76,7 @@ Our commitment to excellence extends beyond just delivering exceptional results;
             </p>
           </div>
           <motion.img
-            src={missionIllustration}
+            src={"https://www.maitreyadigital.com/mission.jpg"}
             alt="Our Mission Illustration"
             className="w-full lg:w-1/2 object-contain"
             initial={{ scale: 0.8, opacity: 0 }}
@@ -95,7 +95,7 @@ Our commitment to excellence extends beyond just delivering exceptional results;
           transition={{ duration: 0.6 }}
         >
           <motion.img
-            src={approachIllustration}
+            src={"https://www.maitreyadigital.com/approach.jpg"}
             alt="Our Approach Illustration"
             className="w-full lg:w-1/2 object-contain"
             initial={{ scale: 0.8, opacity: 0 }}
