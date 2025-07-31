@@ -7,96 +7,48 @@ export function HeroParallaxDemo() {
 }
 export const products = [
       {
-            title: "Moonbeam",
+            title: "Grow Your Business with Expert Social Media Marketing!",
             link: "https://gomoonbeam.com",
             thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+                  "/blog/1.png",
       },
       {
-            title: "Cursor",
+            title: "The Power of SEO: Boost Your Online Visibility",
             link: "https://cursor.so",
             thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+                  "/blog/2.png",
       },
       {
-            title: "Rogue",
+            title: "Harnessing the Power of Social Media Marketing",
             link: "https://userogue.com",
             thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+                  "/blog/3.png",
       },
 
       {
-            title: "Editorially",
+            title: "The ROI of Email Marketing: Why It's Worth the Investment",
             link: "https://editorially.org",
             thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+                  "/blog/4.png",
       },
       {
-            title: "Editrix AI",
+            title: "The Digital Marketing Edge: Empowering Your Business in the Modern Age",
             link: "https://editrix.ai",
             thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+                  "/blog/5.png",
       },
       {
-            title: "Pixel Perfect",
+            title: "Tips to Make Your Website More SEO Friendly",
             link: "https://app.pixelperfect.quest",
             thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+                  "/blog/6.png",
       },
 
       {
-            title: "Algochurn",
+            title: "The Power of Email Marketing",
             link: "https://algochurn.com",
             thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+                  "/blog/7.png",
       },
-      {
-            title: "Aceternity UI",
-            link: "https://ui.aceternity.com",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-      },
-      {
-            title: "Tailwind Master Kit",
-            link: "https://tailwindmasterkit.com",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-      },
-      {
-            title: "SmartBridge",
-            link: "https://smartbridgetech.com",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-      },
-      {
-            title: "Renderwork Studio",
-            link: "https://renderwork.studio",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-      },
-
-      {
-            title: "Creme Digital",
-            link: "https://cremedigital.com",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-      },
-      {
-            title: "Golden Bells Academy",
-            link: "https://goldenbellsacademy.com",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-      },
-      {
-            title: "Invoker Labs",
-            link: "https://invoker.lol",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-      },
-      {
-            title: "E Free Invoice",
-            link: "https://efreeinvoice.com",
-            thumbnail:
-                  "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-      },
+     
 ];

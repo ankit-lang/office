@@ -31,6 +31,7 @@ import { MarqueeDemo } from "@/components/Movingcard";
 import { Button } from "@/components/ui/button";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import RollingGallery from "@/components/carouselcompany";
+import Card from "@/components/Cardstyled";
 const content = [
   {
     title: "Welcome to Maitreya",
@@ -141,7 +142,7 @@ export default function Home() {
         whileInView={{ opacity: 1 }}
       >
 
-        <ScrollProgress className="!h-2 z-[100] " />
+        <ScrollProgress className="!h-2 z-[1000] " />
 
         <div className="relative    md:w-[80vw]  h-[32vw] m-auto overflow-visible flex gap-[-10px] items-center justify-center">
           <VideoText
@@ -189,6 +190,7 @@ export default function Home() {
       <div className="!text-4xl text-center">
       <TextGenerateEffect words={"Our Happy Clients"} />
       </div>
+      {/* <Card/> */}
 <RollingGallery autoplay={true} pauseOnHover={true} />
       </div>
       <div className="text-center text-3xl ">

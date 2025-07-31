@@ -20,8 +20,8 @@ export const HeroParallax = ({
     thumbnail: string;
   }[];
 }) => {
-  const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 10);
+  const firstRow = products.slice(0, 4);
+  const secondRow = products.slice(3, 10);
 
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
@@ -108,9 +108,7 @@ export const Header = () => {
       <h1 className="text-2xl md:text-7xl font-bold !text-purple-800">
         Blogs <br /> Maitreya Digital
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, enim.
-      </p>
+     
     </div>
   );
 };
