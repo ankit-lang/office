@@ -77,7 +77,7 @@ const page = () => {
                   
                 />
                       </div>
-      <div className='pl-2 md:pl-20 md:pr-20  pr-2' style={{ height: '1200px', position: 'relative' }}>
+      <div className='pl-2 md:pl-20 md:pr-20  pr-2' style={{  position: 'relative' }}>
     
   <ChromaGrid 
     items={items}

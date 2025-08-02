@@ -167,7 +167,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
     >
       
       {data.map((c, i) => (
-        <Link href={c.url} >
+        <Link href={c.url ?? "#"} >
         <article
           key={i}
           onMouseMove={handleCardMove}

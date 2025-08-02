@@ -74,39 +74,42 @@ const items = [
 const page = () => {
   return (
     <div>
-      <NavbarDemo/>
-      <div className=" pt-32 ">
-         <div className="flex items-center mb-10 relative  justify-center">
-                  <SplitText
-              text="Services"
-              className="text-5xl font-semibold text-center"
-              delay={100}
-              duration={0.6}
-              ease="power3.out"
-              splitType="chars"
-              from={{ opacity: 0, y: 40 }}
-              to={{ opacity: 1, y: 0 }}
-              threshold={0.1}
-              rootMargin="-100px"
-              textAlign="center"
-              
-            />
-                  </div>
-            <div className='md:pl-20 md:pr-20 pl-2 pr-2 rounded-full' style={{ height: '1200px', position: 'relative' }}>
-          
-        <ChromaGrid 
-          items={items}
-          radius={300}
-          damping={0.45}
-          fadeOut={0.2}
-          ease="power3.out"
-        />
+      <NavbarDemo />
+      <div className="pt-32">
+        <div className="flex items-center mb-10 relative justify-center">
+          <SplitText
+            text="Services"
+            className="text-5xl font-semibold text-center"
+            delay={100}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
+        </div>
+        <div
+          className="md:pl-20 md:pr-20 pl-2 pr-2 rounded-full"
+          style={{  position: 'relative' }}
+        >
+          <ChromaGrid
+            items={items}
+            radius={300}
+            damping={0.45}
+            fadeOut={0.2}
+            ease="power3.out"
+          />
+        </div>
       </div>
-            </div>
-            {/* <GoogleGeminiEffectDemo/> */}
-            <Foot/>
+      <div className="mt-10 px-4 sm:px-6 lg:px-8">
+        {/* Ensure proper alignment for the footer */}
+        <Foot />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default page

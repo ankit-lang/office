@@ -53,7 +53,9 @@ const page = () => {
       {/* <button onClick={scrollToFooter}>Scroll to Footer</button> */}
       <div ref={footerRef} className="h-[40vh] mt-10">
         {/* <GoogleGeminiEffectDemo /> */}
+        {/* <Foot /> */}
       </div>
+       
     </main>
           
     </>
