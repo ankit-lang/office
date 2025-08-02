@@ -3,6 +3,7 @@ import React from 'react'
 import ChromaGrid from '../../components/Chomagrid'
 import SplitText from '@/components/Staggertext';
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini';
+import Foot from '@/components/Footer';
 
 const items = [
  
@@ -103,6 +104,7 @@ const page = () => {
       </div>
             </div>
             {/* <GoogleGeminiEffectDemo/> */}
+            <Foot/>
     </div>
   )
 }

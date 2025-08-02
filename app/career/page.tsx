@@ -97,6 +97,7 @@ import ProgramCard from './ProgramCard'
 import FeatureCard from './FeatureCard'
 import WhoCanCard from './WhoCanCard'
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini'
+import Foot from '@/components/Footer'
 
 export  function ProgramsSection() {
   return (
@@ -210,7 +211,8 @@ export  function ProgramsSection() {
           />
         </div>
       </section>
-      <GoogleGeminiEffectDemo/>
+      {/* <GoogleGeminiEffectDemo/> */}
+      <Foot/>
     </div>
   )
 }

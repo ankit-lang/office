@@ -27,7 +27,11 @@ const page = () => {
                           Contact us
                         </div>
                         <ContactSection />
-                        <GoogleGeminiEffectDemo/>
+                        {/* <GoogleGeminiEffectDemo/> */}
+                        <div className="">
+
+                        <Foot/>
+                        </div>
     </div>
   )
 }
@@ -41,6 +45,7 @@ export default page
 import Image from 'next/image'
 import { HiLocationMarker, HiMail, HiPhone, HiArrowSmUp } from 'react-icons/hi'
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini'
+import Foot from '@/components/Footer'
 
 export function ContactSection() {
   return (

@@ -4,6 +4,7 @@ import React, { useRef, useCallback, useLayoutEffect } from 'react'
 import dynamic from 'next/dynamic';
 import { ScrollStackItem } from './Scrollstack';
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini';
+import Foot from '@/components/Footer';
 
 const ScrollStack = dynamic(
   () => import('./Scrollstack'),
@@ -37,6 +38,7 @@ const page = () => {
   }, []);
 
   return (
+    <>
     <main className="min-h-screen bg-gray-50">
       <NavbarDemo />
       <h1  className='text-center text-3xl pt-24' >Blogs</h1>
@@ -50,9 +52,11 @@ const page = () => {
       </div>
       {/* <button onClick={scrollToFooter}>Scroll to Footer</button> */}
       <div ref={footerRef} className="h-[40vh] mt-10">
-        <GoogleGeminiEffectDemo />
+        {/* <GoogleGeminiEffectDemo /> */}
       </div>
     </main>
+          
+    </>
   )
 }
 

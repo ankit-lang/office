@@ -32,6 +32,8 @@ import { Button } from "@/components/ui/button";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import RollingGallery from "@/components/carouselcompany";
 import Card from "@/components/Cardstyled";
+import Foot from "@/components/Footer";
+import TestimonialCarousel from "@/components/testinomial";
 const content = [
   {
     title: "Welcome to Maitreya",
@@ -95,6 +97,7 @@ const slideData = [
   },
 
 ];
+
 const testimonials = [
   {
     quote:
@@ -193,12 +196,16 @@ export default function Home() {
       {/* <Card/> */}
 <RollingGallery autoplay={true} pauseOnHover={true} />
       </div>
-      <div className="text-center text-3xl ">
+      <div className="text-center  font-bold text-3xl md:text-4xl  mb-10">
         <h1>Testinomial</h1>
       </div>
-      
-      <AnimatedTestimonials autoplay={true} testimonials={testimonials} />
-  <div className="text-center text-3xl md:mx-24 mx-2 mt-10 mb-10">
+
+      <TestimonialCarousel/>
+
+
+
+      {/* <AnimatedTestimonials autoplay={true} testimonials={testimonials} /> */}
+  <div className="text-center text-3xl md:mx-24 mx-2 md:mt-20 mt-10 mb-10">
   <TextGenerateEffect words={"Frequently Asked Question"} />
   <Accordion type="single" collapsible>
   <AccordionItem value="item-1" className="flex flex-col items-start ">
@@ -248,7 +255,8 @@ export default function Home() {
       {/* <h1 className="text-center text-3xl mt-10 mb-[]"> Frequently Asked Question</h1>
       <MarqueeDemo /> */}
  <div className="">
-       <GoogleGeminiEffectDemo />
+       {/* <GoogleGeminiEffectDemo /> */}
+       <Foot/>
  </div>
     </>
   );

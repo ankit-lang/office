@@ -5,6 +5,7 @@ import ChromaGrid from '../../components/Chomagrid'
 import SplitText from '@/components/Staggertext';
 import { GoogleGeminiEffect } from '@/components/ui/google-gemini-effect';
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini';
+import Foot from '@/components/Footer';
 
 const items = [
   {
@@ -88,6 +89,7 @@ const page = () => {
 </div>
       </div>
       {/* <GoogleGeminiEffectDemo/> */}
+      <div className=  ""><Foot/></div>
     </>
   )
 }

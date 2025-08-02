@@ -8,6 +8,7 @@ import CurvedLoop from '@/components/Curvedloop';
 import Carousel from '@/components/aceCaroursel';
 import { GoogleGeminiEffect } from '@/components/ui/google-gemini-effect';
 import { GoogleGeminiEffectDemo } from '@/components/GoogleGemini';
+import Foot from '@/components/Footer';
 
 
 const page = () => {
@@ -113,7 +114,8 @@ Our commitment to excellence extends beyond just delivering exceptional results;
 
       </div>
     </section>
-    <GoogleGeminiEffectDemo/>
+    {/* <GoogleGeminiEffectDemo/> */}
+    <Foot/>
 
    </>
   )
