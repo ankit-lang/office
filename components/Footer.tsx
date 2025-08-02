@@ -28,18 +28,18 @@ export default function Foot() {
 function Footer() {
     // Data for the footer links, making it easy to update
     const usefulLinks = [
-        { name: 'Home', href: '#' },
-        { name: 'About Us', href: '#' },
-        { name: 'Contact Us', href: '#' },
-        { name: 'Courses', href: '#' },
+        { name: 'Home', href: '/' },
+        { name: 'About Us', href: '/about' },
+        { name: 'Contact Us', href: '/contact' },
+        { name: 'Service', href: '/services' },
     ];
 
     const services = [
-        { name: 'SEO', href: '#' },
-        { name: 'SMO', href: '#' },
-        { name: 'Graphic Design', href: '#' },
-        { name: 'Web Development', href: '#' },
-        { name: 'Video Editing', href: '#' },
+        { name: 'SEO', href: '/services/seo' },
+        { name: 'SMO', href: '/services/smp' },
+        { name: 'Graphic Design', href: '/services/graphic-designing' },
+        { name: 'Web Development', href: '/services/website-designing' },
+        { name: 'Video Editing', href: '/services/video-editing' },
     ];
     
     const socialLinks = [
