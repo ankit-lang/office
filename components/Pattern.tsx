@@ -18,7 +18,7 @@ const Pattern: React.FC<PatternProps> = ({children}) => {
 
 const StyledWrapper = styled.div`
   position: relative; /* Ensure the overlay is positioned relative to this wrapper */
-  width: 100%;
+  width: 120%;
   height: 50vh; /* Ensure the wrapper takes up the full viewport height */
 
   .content-overlay {

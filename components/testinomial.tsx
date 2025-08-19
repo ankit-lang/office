@@ -77,9 +77,9 @@ const TestimonialCarousel = () => {
   const { name, rating, text, bgImage } = testimonials[index];
 
   return (
-      <Pattern>
+      // <Pattern>
     <section
-      className="relative w-full h-96 overflow-hidden flex items-center justify-center text-center text-white"
+      className="relative w-full h-96 bg-purple-900 overflow-hidden flex items-center justify-center text-center text-white"
       // style={{
       //   background: `url(${bgImage}) center/cover no-repeat`,
       // }}
@@ -108,7 +108,7 @@ className={`w-3 h-3 rounded-full transition-all ${
         ))}
       </div>
     </section>
-    </Pattern>
+    // </Pattern>
   );
 };
 
