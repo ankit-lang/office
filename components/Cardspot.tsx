@@ -2,13 +2,13 @@ import { CardSpotlight } from "./ui/card-spotlight";
 
 export function CardSpotlightDemo({title, description } ) {
   return (
-    <CardSpotlight className="h-96 w-96">
+    <CardSpotlight className="h-auto w-96">
       <p className="md:text-xl  text-sm font-bold relative z-20  md:mt-2 text-white">
         {title || "Secure Your Account"}
       </p>
      
-      <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-    {description || "Follow these steps to secure your account and protect your personal information."}
+      <p className="text-neutral-300 mt-4  relative z-20 text-sm">
+    {description || "Follow these steps to secure your account and protect your personal information."} 
       </p>
     </CardSpotlight>
   );

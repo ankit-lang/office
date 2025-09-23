@@ -14,50 +14,50 @@ import {
 export function FeaturesSectionDemo() {
       const features = [
             {
-                  title: "Built for developers",
+                  title: "Proven Strategies and Techniques:",
                   description:
-                        "Built for engineers, developers, dreamers, thinkers and doers.",
+                        "Unlock the power of our proven strategies and techniques to drive your digital success forward.",
                   icon: <IconTerminal2 />,
             },
             {
-                  title: "Ease of use",
+                  title: "Customized Approach:",
                   description:
-                        "It's as easy as using an Apple, and as expensive as buying one.",
+                        "Experience the difference of our customized approach, tailored to fit your unique business needs and goals",
                   icon: <IconEaseInOut />,
             },
             {
-                  title: "Pricing like no other",
+                  title: "Transparency and Communication:",
                   description:
-                        "Our prices are best in the market. No cap, no lock, no credit card required.",
+                        "We believe in transparency and open communication every step of the way, ensuring your peace of mind and success.",
                   icon: <IconCurrencyDollar />,
             },
             {
-                  title: "100% Uptime guarantee",
-                  description: "We just cannot be taken down by anyone.",
+                  title: "Team Expertise",
+                  description: "Benefit from our team's expertise, honed through years of experience, to deliver results that exceed expectations.",
                   icon: <IconCloud />,
             },
-            {
-                  title: "Multi-tenant Architecture",
-                  description: "You can simply share passwords instead of buying new seats",
-                  icon: <IconRouteAltLeft />,
-            },
-            {
-                  title: "24/7 Customer Support",
-                  description:
-                        "We are available a 100% of the time. Atleast our AI Agents are.",
-                  icon: <IconHelp />,
-            },
-            {
-                  title: "Money back guarantee",
-                  description:
-                        "If you donot like EveryAI, we will convince you to like us.",
-                  icon: <IconAdjustmentsBolt />,
-            },
-            {
-                  title: "And everything else",
-                  description: "I just ran out of copy ideas. Accept my sincere apologies",
-                  icon: <IconHeart />,
-            },
+            // {
+            //       title: "Multi-tenant Architecture",
+            //       description: "You can simply share passwords instead of buying new seats",
+            //       icon: <IconRouteAltLeft />,
+            // },
+            // {
+            //       title: "24/7 Customer Support",
+            //       description:
+            //             "We are available a 100% of the time. Atleast our AI Agents are.",
+            //       icon: <IconHelp />,
+            // },
+            // {
+            //       title: "Money back guarantee",
+            //       description:
+            //             "If you donot like EveryAI, we will convince you to like us.",
+            //       icon: <IconAdjustmentsBolt />,
+            // },
+            // {
+            //       title: "And everything else",
+            //       description: "I just ran out of copy ideas. Accept my sincere apologies",
+            //       icon: <IconHeart />,
+            // },
       ];
       return (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">

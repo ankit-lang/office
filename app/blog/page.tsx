@@ -14,21 +14,25 @@ const ScrollStack = dynamic(
 const cards = [
   {
     title: "Grow Your Business with Expert Social Media Marketing!",
-    img: "/images/social-media.jpg",
+    img: "/images/seo.png",
     excerpt:
       "In today's fast‑paced digital world, social media marketing is essential for business success…",
+    url: "/blog/blog1"
   },
   {
     title: "The Power of SEO: Boost Your Online Visibility",
-    img: "/images/seo.jpg",
+    img: "/images/2.png",
     excerpt:
       "With millions of websites vying for attention, how can you make your brand stand out? The answer is SEO…",
+      url: "/blog/blog2"
   },
   {
-    title: "Harnessing the Power of Social Media Marketing",
-    img: "/images/social-power.jpg",
+
+    title: "The Digital Marketing Edge: Empowering Your Business in the Modern Age",
+    img: "/images/3.png",
     excerpt:
-      "With over 4.2 billion active users worldwide, leverage social media to connect with your audience…",
+      "In the ever-evolving landscape of business, digital marketing has become a crucial tool for growth and success. Understanding its .…",
+      url: "/blog/blog3"
   },
 ];
 const page = () => {

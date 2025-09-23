@@ -72,7 +72,7 @@ Our commitment to excellence extends beyond just delivering exceptional results;
         >
           <div className="lg:w-1/2">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600  leading-relaxed">
               Through innovative solutions and tailored approaches, we empower businesses to navigate the complexities of the digital landscape with confidence. Our team is driven by a passion for excellence and a relentless pursuit of success, ensuring that every client receives personalized attention and strategic guidance tailored to their unique goals and challenges. At Maitreya Digital, we don't just provide services; we forge partnerships built on trust, integrity, and mutual growth. Join us as we embark on a journey to unlock the full potential of your brand in the digital realm.
             </p>
           </div>
