@@ -6,11 +6,11 @@ import React from "react";
 export default function DigitalMarketingArticle() {
   return (
       <>
-    <article className="min-h-screen bg-gray-50  px-4 sm:px-6 lg:px-8">
+    <article className="min-h-screen bg-gray-50  md:px-4 px-1  sm:px-6 lg:px-8">
       <NavbarDemo/>
       <div className="mx-auto pt-20 max-w-5xl">
         {/* Hero */}
-        <header className="mb-10 rounded-2xl bg-white p-8 shadow-lg">
+        <header className="mb-10 rounded-2xl bg-white md:p-8  p-4 shadow-lg">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <h1 className="text-3xl font-extrabold leading-tight text-gray-900">
@@ -40,7 +40,7 @@ export default function DigitalMarketingArticle() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Main column */}
           <main className="order-2 lg:order-1 lg:col-span-2">
-            <section className="space-y-6 rounded-xl bg-white p-6 shadow">
+            <section className="space-y-6 rounded-xl bg-white md:p-6 p-2 shadow">
               <h2 className="text-xl font-bold text-gray-900">Understanding Digital Marketing</h2>
               <p className="text-gray-700">
                 <strong>What is Digital Marketing?</strong> Digital marketing
@@ -92,7 +92,7 @@ export default function DigitalMarketingArticle() {
               </ul>
             </section>
 
-            <section className="mt-6 rounded-xl bg-white p-6 shadow">
+            <section className="mt-6 rounded-xl bg-white md:p-6 p-2 shadow">
               <h2 className="text-xl font-bold text-gray-900">How a Digital Marketing Agency Can Help</h2>
               <p className="text-gray-700">
                 Agencies bring experience, tools, and a strategic lens. Here are the
@@ -132,7 +132,7 @@ export default function DigitalMarketingArticle() {
               </div>
             </section>
 
-            <section className="mt-6 rounded-xl bg-white p-6 shadow">
+            <section className="mt-6 rounded-xl bg-white md:p-6 p-2 shadow">
               <h2 className="text-xl font-bold text-gray-900">The Subtle Advantage of Choosing the Right Partner</h2>
               <p className="text-gray-700">
                 Choosing an agency that matches your values and vision makes collaboration

@@ -6,7 +6,7 @@ export default function MaitreyaDigitalMarketing() {
   return (
     <main className="min-h-screen  bg-gray-50 ">
       <NavbarDemo/>
-      <header className=" pt-32 max-w-4xl mx-auto mb-8">
+      <header className=" pt-32 max-w-4xl mx-auto p-2 mb-8">
         <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900">
           The Power of SEO: Boost Your Online Visibility
         </h1>

@@ -6,8 +6,8 @@ const page = () => {
   return (
     <div>
       <NavbarDemo/>
-       <div className="min-h-screen bg-gray-100 pt-20 p-8 flex justify-center items-center font-sans text-gray-800">
-      <div className="bg-white rounded-xl shadow-lg p-10 max-w-4xl mx-auto space-y-8">
+       <div className="min-h-screen bg-gray-100 pt-20 md:p-8  flex justify-center items-center font-sans text-gray-800">
+      <div className="bg-white rounded-xl shadow-lg md:p-10 p-2 max-w-4xl mx-auto space-y-8">
         <header className="text-center">
           <h1 className="text-4xl font-extrabold text-blue-800 mb-2">
             Grow Your Business with Expert Social Media Marketing!
