@@ -1,4 +1,5 @@
 "use client";
+import Foot from "@/components/Footer";
 import { NavbarDemo } from "@/components/Navbar";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
@@ -40,7 +41,7 @@ const Page = () => {
   return (
     <div>
       <NavbarDemo />
-      <div className="p-32">
+      <div className="md:p-32">
         <section className="px-4 sm:px-6 lg:px-8 py-12">
           {/* Hero Section */}
           <motion.div
@@ -190,6 +191,7 @@ const Page = () => {
           </section>
         </section>
       </div>
+      <Foot/>
     </div>
   );
 };

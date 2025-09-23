@@ -2,6 +2,7 @@
 import { NavbarDemo } from '@/components/Navbar';
 import React from 'react'
 import { motion } from 'framer-motion';
+import Foot from '@/components/Footer';
 const seoItems = [
   {
     title: '1. Best SEO Agency in Delhi NCR',
@@ -69,6 +70,7 @@ const page = () => {
       </div>
     </section>
       </div>
+      <Foot/>
     </div>
   )
 }

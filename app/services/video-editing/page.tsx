@@ -3,6 +3,7 @@ import { NavbarDemo } from '@/components/Navbar';
 import React, { useState } from 'react'
   // Remove this duplicate useState declaration; useState should be called inside the component and with the correct type.
 import { motion } from 'framer-motion';
+import Foot from '@/components/Footer';
 
 
 
@@ -61,7 +62,7 @@ const page = () => {
   return (
     <div>
       <NavbarDemo />
-      <div className="pt-32">
+      <div className="md:pt-32">
              <section className="bg-white px-4 sm:px-6 lg:px-8 py-16">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <motion.h2
@@ -129,7 +130,7 @@ const page = () => {
     </section>
 
       </div>
-        
+        <Foot/>
     </div>
   )
 }

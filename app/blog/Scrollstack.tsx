@@ -25,10 +25,10 @@ export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
       transformStyle: "preserve-3d",
     }}
   >
+    <Link href={card.url} >
     <img src={card.img} alt={card.title} className="w-full h-64 object-cover mb-4 rounded-md" />
     <h2 className="text-3xl font-bold mb-4">{card.title}</h2>
     <p className="text-lg mb-4">{card.excerpt}</p>
-    <Link href={card.url} >
     <button className="bg-teal-500 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-teal-600 transition-colors duration-200">
       Read More
     </button>

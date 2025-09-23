@@ -36,7 +36,7 @@ function Footer() {
 
     const services = [
         { name: 'SEO', href: '/services/seo' },
-        { name: 'SMO', href: '/services/smp' },
+        { name: 'SMO', href: '/services/smo' },
         { name: 'Graphic Design', href: '/services/graphic-designing' },
         { name: 'Web Development', href: '/services/website-designing' },
         { name: 'Video Editing', href: '/services/video-editing' },

@@ -17,6 +17,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Maitreya digital",
   description: "Marketing agency",
+  icons: {
+    icon: [
+      { url: "/logo.png", sizes: "16x16", type: "image/png" },
+           ]       // Default favicon
+   
+  },
 };
 
 export default function RootLayout({

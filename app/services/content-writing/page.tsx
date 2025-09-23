@@ -3,6 +3,7 @@ import { NavbarDemo } from '@/components/Navbar';
 import React, { useState } from 'react'
 
 import { motion } from 'framer-motion';
+import Foot from '@/components/Footer';
 
 const services = [
   {
@@ -57,7 +58,7 @@ const page = () => {
   return (
     <div>
       <NavbarDemo />
-      <div className="pt-32">
+      <div className="md:pt-32">
            <section className="bg-white px-4 sm:px-6 lg:px-8 py-16">
       <motion.div
         className="max-w-4xl mx-auto text-center mb-12"
@@ -127,7 +128,7 @@ const page = () => {
       </section>
     </section>
       </div>
-        
+        <Foot/>
     </div>
   )
 }
