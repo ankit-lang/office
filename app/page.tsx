@@ -190,8 +190,8 @@ export default function Home() {
       </div>
       <HeroParallaxDemo />
       <div className="px-20">
-      <div className="!text-4xl text-center mt-20 ">
-      <TextGenerateEffect words={"Our Happy Clients"} />
+      <div className="!text-4xl text-center mt-20 font-bold mb-3 md:mt-[-30px] ">
+      Our Happy Clients 
       </div>
       {/* <Card/> */}
 <RollingGallery autoplay={true} pauseOnHover={true} />
