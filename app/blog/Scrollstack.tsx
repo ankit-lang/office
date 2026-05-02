@@ -9,7 +9,7 @@ export interface ScrollStackItemProps {
     title: string;
     img: string;
     excerpt: string;
-    url:string;
+    url: string;
   };
 }
 
@@ -19,19 +19,19 @@ export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
   card,
 }) => (
   <div
-    className={`scroll-stack-card relative w-full min-h-[500px] my-8 p-12 bg-white rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.1)] box-border origin-top will-change-transform ${itemClassName}`.trim()}
+    className={`scroll-stack-card relative w-full min-h-[500px] my-[-2rem] p-[1rem] bg-white rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.1)] box-border origin-top will-change-transform ${itemClassName}`.trim()}
     style={{
       backfaceVisibility: "hidden",
       transformStyle: "preserve-3d",
     }}
   >
     <Link href={card.url} >
-    <img src={card.img} alt={card.title} className="w-full h-64 object-cover mb-4 rounded-md" />
-    <h2 className="text-3xl font-bold mb-4">{card.title}</h2>
-    <p className="text-lg mb-4">{card.excerpt}</p>
-    <button className="bg-teal-500 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-teal-600 transition-colors duration-200">
-      Read More
-    </button>
+      <img src={card.img} alt={card.title} className="w-full h-64 object-cover mb-4 rounded-md" />
+      <h2 className="text-3xl font-bold mb-4">{card.title}</h2>
+      <p className="text-lg mb-4">{card.excerpt}</p>
+      <button className="bg-teal-500 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-teal-600 transition-colors duration-200">
+        Read More
+      </button>
     </Link>
   </div>
 );
@@ -123,7 +123,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
             topCardIndex = j;
           }
         }
-        
+
         if (i < topCardIndex) {
           const depthInStack = topCardIndex - i;
           blur = Math.max(0, depthInStack * blurAmount);
@@ -132,7 +132,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
 
       let translateY = 0;
       const isPinned = scrollTop >= pinStart && scrollTop <= pinEnd;
-      
+
       if (isPinned) {
         translateY = scrollTop - cardTop + stackPositionPx + (itemStackDistance * i);
       } else if (scrollTop > pinEnd) {
@@ -147,7 +147,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
       };
 
       const lastTransform = lastTransformsRef.current.get(i);
-      const hasChanged = !lastTransform || 
+      const hasChanged = !lastTransform ||
         Math.abs(lastTransform.translateY - newTransform.translateY) > 0.1 ||
         Math.abs(lastTransform.scale - newTransform.scale) > 0.001 ||
         Math.abs(lastTransform.rotation - newTransform.rotation) > 0.1 ||
@@ -159,7 +159,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
 
         card.style.transform = transform;
         card.style.filter = filter;
-        
+
         lastTransformsRef.current.set(i, newTransform);
       }
 
@@ -273,22 +273,22 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
 
   return (
     <>
-    <div
-      className={`fixed inset-0 w-full h-screen overflow-x-hidden ${className}`.trim()}
-      ref={scrollerRef}
-      style={{
-        overscrollBehavior: "none",
-        WebkitOverflowScrolling: 'touch',
-        perspective: '1000px',
-        willChange: 'scroll-position'
-      }}
-    >
-      <div className="scroll-stack-inner relative pt-[20vh] px-4 md:px-20 pb-[100vh]">
-        {children}
-        <div className="scroll-stack-end w-full h-px" />
+      <div
+        className={`fixed inset-0 w-full h-screen overflow-x-hidden ${className}`.trim()}
+        ref={scrollerRef}
+        style={{
+          overscrollBehavior: "none",
+          WebkitOverflowScrolling: 'touch',
+          perspective: '1000px',
+          willChange: 'scroll-position'
+        }}
+      >
+        <div className="scroll-stack-inner relative pt-[20vh] px-4 md:px-20 pb-[100vh]">
+          {children}
+          <div className="scroll-stack-end w-full h-px" />
+        </div>
       </div>
-    </div>
-     {/* <Foot/> */}
+      {/* <Foot/> */}
     </>
   );
 };

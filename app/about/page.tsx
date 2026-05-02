@@ -20,7 +20,7 @@ const page = () => {
         <NavbarDemo />
       </div>
 
-      <div className="flex flex-wrap md:flex-none gap-10 mx-auto pt-24 p-4 md:p-32">
+      <div className="flex flex-wrap md:flex-none gap-8 mx-auto pt-24 p-4 md:p-32">
 
         <CardSpotlightDemo title="Leading the Digital Revolution: Maitreya Digital's Journey" description={"Since our inception in 2022, Maitreya Digital has been at the forefront of revolutionizing the digital marketing landscape. With a passion for innovation and a commitment to excellence, we have established ourselves as a leading *digital marketing agency* dedicated to helping businesses thrive in the ever-evolving online world "} />
 
