@@ -5,7 +5,13 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true, // 🚨 not recommended for production!
   },
-
+  serverExternalPackages: [
+    "gsap",
+    "lenis",
+    "@studio-freight/lenis",
+    "three",
+    "@react-three/fiber",
+  ],
 };
 
 export default nextConfig;

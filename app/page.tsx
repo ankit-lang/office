@@ -40,7 +40,7 @@ const content = [
     description:
       "Discover digital success with Maitreya Digital, India's premier digital marketing agency. Based in Delhi NCR, we excel in driving business growth through innovative strategies and expertise. For a top digital marketing company or a reliable marketing agency near you, choose Maitreya Digital.",
     content: (
-      <LensDemo img="/banner/1.png"  title="Expertise" subtitle='With an experience and a proven track record of success, we have the expertise to deliver results that matter.' />
+      <LensDemo img="/banner/1.png" title="Expertise" subtitle='With an experience and a proven track record of success, we have the expertise to deliver results that matter.' />
     ),
   },
   {
@@ -57,43 +57,43 @@ const content = [
       "What sets us apart at Maitreya Digital is our client-centric approach. We understand that every business is unique, which is why we take the time to listen to your needs, understand your goals, and tailor our strategies accordingly. Whether you're looking to increase brand visibility, drive website traffic, or boost conversion rates, we have the knowledge and experience to help you achieve your objectives.",
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
-        <LensDemo img="/banner/3.png"  title="Commitment" subtitle="We are committed to our clients' success and go above and beyond to deliver exceptional service and results." />
+        <LensDemo img="/banner/3.png" title="Commitment" subtitle="We are committed to our clients' success and go above and beyond to deliver exceptional service and results." />
       </div>
     ),
   },
-  
- 
+
+
 ];
 const slideData = [
   {
     title: "Social Media Optimization",
     button: "Explore ",
-    src: "https://www.maitreyadigital.com/service-1.webp",
+    src: "/images/seo.jpg",
   },
   {
     title: "Urban Dreams",
     button: "Explore ",
-    src: "https://www.maitreyadigital.com/services-2.png",
+    src: "/images/urbandream.jpg",
   },
   {
     title: "web Design",
     button: "Explore ",
-    src: "https://www.maitreyadigital.com/services-3.jpg",
+    src: "/images/webdev.jpg",
   },
   {
     title: "Graphic Design",
     button: "Explore ",
-    src: "https://www.maitreyadigital.com/services-4.png",
+    src: "/images/graphicdesi.jpg",
   },
   {
     title: "Content Writing",
     button: "Explore ",
-    src: "https://www.maitreyadigital.com/services-5.jpg",
+    src: "/images/contentwriting.jpg",
   },
   {
     title: "Video Editing",
     button: "Explore ",
-    src: "https://www.maitreyadigital.com/services-6.jpg",
+    src: "/images/videoediting.jpg",
   },
 
 ];
@@ -190,74 +190,74 @@ export default function Home() {
       </div>
       <HeroParallaxDemo />
       <div className="px-20">
-      <div className="!text-4xl text-center mt-20 font-bold mb-3 md:mt-[-30px] ">
-      Our Happy Clients 
-      </div>
-      {/* <Card/> */}
-<RollingGallery autoplay={true} pauseOnHover={true} />
+        <div className="!text-4xl text-center md:mb-[-400px] mt-20 font-bold mb-3 md:mt-[-30px] ">
+          Our Happy Clients
+        </div>
+        {/* <Card/> */}
+        <RollingGallery autoplay={true} pauseOnHover={true} />
       </div>
       <div className="text-center  font-bold text-3xl md:text-4xl  mb-10">
         <h1>Testinomial</h1>
       </div>
 
-      <TestimonialCarousel/>
+      <TestimonialCarousel />
 
 
 
       {/* <AnimatedTestimonials autoplay={true} testimonials={testimonials} /> */}
-  <div className="text-center text-3xl md:mx-24 mx-2 md:mt-20 mt-10 mb-10">
-  <TextGenerateEffect words={"Frequently Asked Question"} />
-  <Accordion type="single" collapsible>
-  <AccordionItem value="item-1" className="flex flex-col items-start ">
-    <AccordionTrigger className="md:!text-xl text-sm">Q: What services does Maitreya Digital offer?</AccordionTrigger>
-    <AccordionContent >
-    Maitreya Digital offers a comprehensive range of digital marketing services including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, content marketing, email marketing, and website design and development.
-    </AccordionContent>
-  </AccordionItem>
+      <div className="text-center text-3xl md:mx-24 mx-2 md:mt-20 mt-10 mb-10">
+        <TextGenerateEffect words={"Frequently Asked Question"} />
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1" className="flex flex-col items-start ">
+            <AccordionTrigger className="md:!text-xl text-sm">Q: What services does Maitreya Digital offer?</AccordionTrigger>
+            <AccordionContent >
+              Maitreya Digital offers a comprehensive range of digital marketing services including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, content marketing, email marketing, and website design and development.
+            </AccordionContent>
+          </AccordionItem>
 
-  <AccordionItem value="item-2" className="flex flex-col items-start ">
-    <AccordionTrigger className="md:!text-xl text-sm">Q: What services does Maitreya Digital offer?</AccordionTrigger>
-    <AccordionContent >
-    Maitreya Digital offers a comprehensive range of digital marketing services including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, content marketing, email marketing, and website design and development.
-    </AccordionContent>
-  </AccordionItem>
+          <AccordionItem value="item-2" className="flex flex-col items-start ">
+            <AccordionTrigger className="md:!text-xl text-sm">Q: What services does Maitreya Digital offer?</AccordionTrigger>
+            <AccordionContent >
+              Maitreya Digital offers a comprehensive range of digital marketing services including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, content marketing, email marketing, and website design and development.
+            </AccordionContent>
+          </AccordionItem>
 
-  <AccordionItem value="item-3" className="flex flex-col items-start ">
-    <AccordionTrigger className="md:!text-xl text-sm">Q: How does Maitreya Digital ensure the success of its digital marketing campaigns?
-    </AccordionTrigger>
-    <AccordionContent >
-    At Maitreya Digital, we tailor our strategies to meet the unique needs and goals of each client. We start by conducting thorough research and analysis to understand your target audience and industry landscape. We then implement data-driven strategies, continually monitor performance metrics, and make optimizations to ensure the success of your campaigns.
-    </AccordionContent>
-  </AccordionItem>
+          <AccordionItem value="item-3" className="flex flex-col items-start ">
+            <AccordionTrigger className="md:!text-xl text-sm">Q: How does Maitreya Digital ensure the success of its digital marketing campaigns?
+            </AccordionTrigger>
+            <AccordionContent >
+              At Maitreya Digital, we tailor our strategies to meet the unique needs and goals of each client. We start by conducting thorough research and analysis to understand your target audience and industry landscape. We then implement data-driven strategies, continually monitor performance metrics, and make optimizations to ensure the success of your campaigns.
+            </AccordionContent>
+          </AccordionItem>
 
-  <AccordionItem value="item-4" className="flex flex-col items-start ">
-    <AccordionTrigger className="md:!text-xl text-sm">Q: Can Maitreya Digital help my business improve its search engine rankings?
-    </AccordionTrigger>
-    <AccordionContent >
-    Absolutely! SEO is one of our core specialties. We employ a combination of on-page optimization, quality content creation, link building, and technical SEO techniques to help improve your website's visibility and rankings on search engines like Google.
-    </AccordionContent>
-  </AccordionItem>
+          <AccordionItem value="item-4" className="flex flex-col items-start ">
+            <AccordionTrigger className="md:!text-xl text-sm">Q: Can Maitreya Digital help my business improve its search engine rankings?
+            </AccordionTrigger>
+            <AccordionContent >
+              Absolutely! SEO is one of our core specialties. We employ a combination of on-page optimization, quality content creation, link building, and technical SEO techniques to help improve your website's visibility and rankings on search engines like Google.
+            </AccordionContent>
+          </AccordionItem>
 
-  <AccordionItem value="item-5" className="flex flex-col items-start ">
-    <AccordionTrigger className="md:!text-xl text-sm">Q: How long does it take to see results from Maitreya Digital's digital marketing efforts?
-    </AccordionTrigger>
-    <AccordionContent >
-    The timeline for seeing results can vary depending on factors such as the competitiveness of your industry, the current state of your digital presence, and the specific goals of your campaign. However, we typically start to see noticeable improvements within the first few months of engagement.
-    </AccordionContent>
-  </AccordionItem>
+          <AccordionItem value="item-5" className="flex flex-col items-start ">
+            <AccordionTrigger className="md:!text-xl text-sm">Q: How long does it take to see results from Maitreya Digital's digital marketing efforts?
+            </AccordionTrigger>
+            <AccordionContent >
+              The timeline for seeing results can vary depending on factors such as the competitiveness of your industry, the current state of your digital presence, and the specific goals of your campaign. However, we typically start to see noticeable improvements within the first few months of engagement.
+            </AccordionContent>
+          </AccordionItem>
 
 
 
-  
-  
-</Accordion>
-  </div>
+
+
+        </Accordion>
+      </div>
       {/* <h1 className="text-center text-3xl mt-10 mb-[]"> Frequently Asked Question</h1>
       <MarqueeDemo /> */}
- <div className="">
-       {/* <GoogleGeminiEffectDemo /> */}
-       <Foot/>
- </div>
+      <div className="">
+        {/* <GoogleGeminiEffectDemo /> */}
+        <Foot />
+      </div>
     </>
   );
 }
