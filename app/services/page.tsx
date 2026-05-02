@@ -52,7 +52,7 @@ const items = [
       gradient: "linear-gradient(180deg, #10B981, #000)",
       url: "/services/content-writing"
     },
-    ,  {
+    {
       image: "https://www.maitreyadigital.com/services-6.jpg",
       title: "Video Editing",
       subtitle: "Reaching target audience through targeted digital advertising campaigns.",
