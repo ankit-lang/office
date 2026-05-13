@@ -11,7 +11,10 @@ import {
 
 const IMGS: string[] = [
   "/images/client1.jpeg",
-  "/images/client2.jpeg"
+  "/images/client2.jpeg",
+  "/images/client3.jpeg",
+  "/images/client4.jpeg",
+  "/images/client5.jpeg",
 
 
 ];
