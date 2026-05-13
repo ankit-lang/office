@@ -10,14 +10,10 @@ import {
 } from "framer-motion";
 
 const IMGS: string[] = [
-  "https://www.maitreyadigital.com/ruz_logo.jpg",
-  "https://www.maitreyadigital.com/gatbro_logo.jpg",
-  "https://www.maitreyadigital.com/perfume_logo.jpg",
-  "https://www.maitreyadigital.com/bath_logo.jpg",
-  "https://www.maitreyadigital.com/karmand_logo.png",
-  "https://www.maitreyadigital.com/admire_logo.jpg",
-  "https://www.maitreyadigital.com/prans_logo.jpg",
-  
+  "/images/client1.jpeg",
+  "/images/client2.jpeg"
+
+
 ];
 
 interface RollingGalleryProps {
@@ -129,7 +125,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
       /> */}
       {/* Right shadow - purple, reduced width on mobile */}
       {/* <div */}
-        {/* className="absolute top-0 right-0 h-full w-[10px] sm:w-[16px] md:w-[24px] lg:w-[32px] z-10 pointer-events-none"
+      {/* className="absolute top-0 right-0 h-full w-[10px] sm:w-[16px] md:w-[24px] lg:w-[32px] z-10 pointer-events-none"
         style={{
           background:
             "linear-gradient(to right, rgba(0,0,0,0) 0%, #a855f7 100%)",
@@ -154,8 +150,8 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
                 ? window.innerWidth < 640
                   ? 600
                   : window.innerWidth < 1024
-                  ? 1300
-                  : 1100
+                    ? 1300
+                    : 1100
                 : 1100,
             transformStyle: "preserve-3d",
           }}
@@ -166,15 +162,14 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               key={i}
               className="group absolute flex h-fit items-center justify-center   md:p-[6%] [backface-visibility:hidden]"
               style={{
-                width: `${
-                  typeof window !== "undefined"
+                width: `${typeof window !== "undefined"
                     ? window.innerWidth < 640
                       ? 300
                       : window.innerWidth < 1024
-                      ? 240
-                      : 300
+                        ? 240
+                        : 300
                     : 300
-                }px`,
+                  }px`,
                 transform: `rotateY(${(360 / faceCount) * i}deg) translateZ(${radius}px)`,
               }}
             >
