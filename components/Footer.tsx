@@ -44,9 +44,9 @@ function Footer() {
     
     const socialLinks = [
         { icon: <Twitter size={20} />, href: '#', 'aria-label': 'Twitter' },
-        { icon: <Facebook size={20} />, href: '#', 'aria-label': 'Facebook' },
-        { icon: <Instagram size={20} />, href: '#', 'aria-label': 'Instagram' },
-        { icon: <Linkedin size={20} />, href: '#', 'aria-label': 'LinkedIn' },
+        { icon: <Facebook size={20} />, href: 'https://www.facebook.com/MaitreyaDigital/', 'aria-label': 'Facebook' },
+        { icon: <Instagram size={20} />, href: 'https://www.instagram.com/maitreya_digital/', 'aria-label': 'Instagram' },
+        { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/company/maitreya-digital/', 'aria-label': 'LinkedIn' },
     ];
 
     return (

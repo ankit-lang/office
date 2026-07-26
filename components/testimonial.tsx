@@ -43,27 +43,6 @@ const testimonials = [
   },
 ];
 
-// const testimonials = [
-//   {
-//     name: 'Er. Pranav Dwivedi',
-//     rating: 5,
-//     text: "I've had the pleasure of working with Maitreya Digital for several years now, and I continue to be impressed by their professionalism and dedication to client success. Their team's expertise in digital marketing is unparalleled, and I wouldn't hesitate to recommend them to anyone looking to elevate their online presence.",
-//     bgImage: '/path/to/image1.jpg',
-//   },
-//   {
-//     name: 'Ms. Anjali Sharma',
-//     rating: 5,
-//     text: "Maitreya Digital revamped our website and SEO strategy — the results have been incredible! Traffic is up 75% year over year and leads have doubled. Their transparent reporting and responsive support make them a true partner.",
-//     bgImage: '/path/to/image2.jpg',
-//   },
-//   {
-//     name: 'Mr. Rakesh Patel',
-//     rating: 4,
-//     text: "Great team with fresh ideas! From social media campaigns to video edits, they delivered on time and within budget. Very happy with the creative approach.",
-//     bgImage: '/path/to/image3.jpg',
-//   },
-// ];
-
 const TestimonialCarousel = () => {
   const [index, setIndex] = useState(0);
 
@@ -77,14 +56,9 @@ const TestimonialCarousel = () => {
   const { name, rating, text, bgImage } = testimonials[index];
 
   return (
-      // <Pattern>
-    <section
+      <section
       className="relative w-full h-96 bg-purple-900 overflow-hidden flex items-center justify-center text-center text-white"
-      // style={{
-      //   background: `url(${bgImage}) center/cover no-repeat`,
-      // }}
     >
-      {/* <div className="absolute inset-0 bg-black bg-opacity-60"></div> */}
       <div className="relative z-10 max-w-2xl px-6">
         <h3 className="text-xl md:text-2xl font-semibold mb-2">{name}</h3>
         <div className="flex justify-center mb-4">
@@ -95,7 +69,6 @@ const TestimonialCarousel = () => {
         <p className="italic leading-relaxed">“{text}”</p>
       </div>
 
-      {/* Dots */}
       <div className="absolute bottom-6 flex space-x-2">
         {testimonials.map((_, i) => (
           <button
@@ -108,7 +81,6 @@ className={`w-3 h-3 rounded-full transition-all ${
         ))}
       </div>
     </section>
-    // </Pattern>
   );
 };
 

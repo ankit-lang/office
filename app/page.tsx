@@ -33,7 +33,7 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import RollingGallery from "@/components/carouselcompany";
 import Card from "@/components/Cardstyled";
 import Foot from "@/components/Footer";
-import TestimonialCarousel from "@/components/testinomial";
+import TestimonialCarousel from "@/components/testimonial";
 const content = [
   {
     title: "Welcome to Maitreya",
@@ -197,7 +197,7 @@ export default function Home() {
         <RollingGallery autoplay={true} pauseOnHover={true} />
       </div>
       <div className="text-center  font-bold text-3xl md:text-4xl  mb-10">
-        <h1>Testinomial</h1>
+        <h1>Testimonial</h1>
       </div>
 
       <TestimonialCarousel />
